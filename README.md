@@ -15,4 +15,5 @@ The Python scripts and CLI commands can be found in the `/src` directory. The da
   - Install [Lerobot](https://huggingface.co/docs/lerobot/installation)
   - Run `conda activate lerobot` for every new CLI window
 
-
+## Dataset
+[Link to the dataset](https://huggingface.co/datasets/LeoTKM/record-test_20260621_132657)
