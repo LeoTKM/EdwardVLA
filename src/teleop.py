@@ -1,3 +1,6 @@
+# Teleoperating the SO101 follower
+# 2026 Jun 21
+
 from lerobot.teleoperators.so_leader import SO101LeaderConfig, SO101Leader
 from lerobot.robots.so_follower import SO101FollowerConfig, SO101Follower
 
