@@ -17,3 +17,11 @@ The Python scripts and CLI commands can be found in the `/src` directory. The da
 
 ## Dataset
 [Link to the dataset](https://huggingface.co/datasets/LeoTKM/record-test_20260621_132657)
+
+## Troubleshooting
+If your system is also taking a very long time to download the trained models, you will likely experience a camera connection issue. That happens because when you run `lerobot-rollout` the system simultaneously tries to connect to the camera. So by the time you finish loading the models, the camera connection may have already timed out. 
+
+To fix the problem, navigate to  `~/lerobot/src/lerobot/cameras/opencv/camera_opencv.py`
+
+At line 173, change `self.async_read(timeout_ms=self.warmup_s * 1000)` from 1000 to a larger number, this will extend the timeout period and fix your issue. 
+
